@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Laskuri</title>
+    <link rel="stylesheet" href="teh2.css">
+    <script src="teh2.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="top_nav">
+            <a href="teh1.html">Home</a>
+            <a class="active" href="teh2.html">BMI</a>
+            <a href="teh3.html">Päiväkirja</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="bmi-box">
+            <h2>BMI Laskuri</h2>
+            <p>Syötä painosi ja pituutesi, niin laskemme BMI:si.</p>
+            <form id="bmiForm">
+                <label for="paino">Paino (kg):</label>
+                <input type="number" id="paino" name="paino" required>
+                
+                <label for="pituus">Pituus (cm):</label>
+                <input type="number" id="pituus" name="pituus" required>
+                
+                <button type="submit">Laske</button>
+            </form>
+            
+            <div class="bmi-result">
+                <h3>BMI: <span id="bmiValue">-</span></h3>
+                <p id="bmiAnalysis">Tuloksesi tulee tähän.</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

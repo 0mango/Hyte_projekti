@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="teh3.css">
+    <link rel="stylesheet" href="teh1.2.css">
+    <link rel="stylesheet" href="teh2.css">
+    <script src="teh3.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="top_nav">
+        <a class="active" href="teh1.html">Home</a>
+        <a href="teh2.html">BMI</a>
+        <a href="#">Päiväkirja</a>
+    </div>
+</header>
+
+<div id="popup-tausta" class="modal">
+    <div class="popup">
+        <span class="sulje" id="sulje-popup">&times;</span>
+        <h2>Kirjaudu sisään</h2>
+        <form>
+            <ol>
+                <label for="name">Käyttäjänimi:</label>
+                <input type="name" id="name" required>
+
+                <label for="password">Salasana:</label>
+                <input type="password" id="password" required>
+            </ol>
+            <button id="tallenna">Kirjaudu</button>
+        </form>
+    </div>
+</div>
+
+<div id="iso-laatikko">
+    <div id="teksti_palsta">
+        <h1>Päiväkirja merkitäsi</h1>
+    </div>
+    <div id="merkinta"></div>
+    <button id="lisää_teksti">+</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button id="close">X</button>
+            <h2>Päiväkirja kirjoitelma:</h2>
+            <textarea id="userInput" rows="5"></textarea>
+            <button id="tallennnus">Tallenna</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

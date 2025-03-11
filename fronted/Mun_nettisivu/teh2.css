@@ -1,0 +1,102 @@
+body {
+    background-color: #f9e6ea;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.teksti {
+    text-align: center;
+}
+
+#tea {
+    color: rgb(151, 150, 150);
+}
+
+
+header {background-color: #de898d57;
+    height: 50px;
+    width: auto;}
+    body {
+            margin: 10px;
+            background-color:#f9e6ea;
+        }
+        .top_nav {
+            background-color: #a4888875;
+            overflow: hidden;
+            width: auto;
+        }
+        .top_nav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+    
+        .top_nav a:hover {
+        background-color: #fe9595;
+        color: rgb(255, 255, 255);
+    
+        }
+
+.bmi-box {
+    background-color: #f7d8e0;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bmi-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(231, 174, 189);
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fe9595;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e76f6f;
+}
+
+@media only screen and (max-width: 700px) {
+    .bmi-box {
+        width: 80%;
+    }
+    input {
+        width: 90%;
+    }
+}
