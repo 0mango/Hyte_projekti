@@ -1,0 +1,35 @@
+###  Hae käyttäjät
+GET http://localhost:3000/users
+
+###  Luo uusi käyttäjä (jos et ole tehnyt sitä)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Minna",
+  "password": "4321",
+}
+
+###  Kirjaudu sisään (käytä oikeaa salasanaa)
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "name": "sumaya",
+  "password": "1234"
+}
+
+###  Hae token kirjautumalla
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "name": "Minna"
+}
+
+###  Käytä saamaasi tokenia saadaksesi postaukset
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWlubmEiLCJpYXQiOjE3NDE2MDYwMjR9.lkDtbIUKipipRvYPe0lHhZmWbR-d3P_Edj3k-44KqLw
+
+### poista
+DELETE http://localhost:3000/users/Minna
