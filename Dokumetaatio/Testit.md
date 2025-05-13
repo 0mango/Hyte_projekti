@@ -63,7 +63,7 @@ Syötetään olemassa oleva käyttäjätunnus ja oikea salasana.
 
 ### Testausympäristö
 
-- Testityökalu: Robot Framework + SeleniumLibrary  
+- Kirjasto: SeleniumLibrary  
 - Selain: Chrome  
 - Testisivu: [https://www.selenium.dev/selenium/web/web-form.html](https://www.selenium.dev/selenium/web/web-form.html)
 
