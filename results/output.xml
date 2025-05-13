@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.1 on win32)" generated="2025-05-13T23:55:39.256010" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\ahmed\Hyte_projekti\testit\login.robot">
+<test id="s1-t1" name="sisään kirjauntuminen." line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-13T23:55:40.528401" level="INFO">Opening browser 'chrome' to base url 'https://users.metropolia.fi/~sumeyaah/Mun_nettisivu/teh3.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-13T23:55:40.526885" elapsed="5.807070"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-13T23:55:46.336434" level="INFO">Typing text 'Testi henkilö' into text field 'id= name'.</msg>
+<arg>id= name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-13T23:55:46.335419" elapsed="0.281130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-13T23:55:46.617633" level="INFO">Typing text 'testi' into text field 'id= password'.</msg>
+<arg>id= password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-13T23:55:46.617633" elapsed="0.146885"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-13T23:55:46.765519" level="INFO">Clicking button 'id= tallenna'.</msg>
+<arg>id= tallenna</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-13T23:55:46.764518" elapsed="0.238437"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-13T23:55:47.003956" elapsed="2.480424"/>
+</kw>
+<status status="PASS" start="2025-05-13T23:55:40.522685" elapsed="8.962711"/>
+</test>
+<status status="PASS" start="2025-05-13T23:55:39.261322" elapsed="10.225753"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
